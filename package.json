@@ -1,0 +1,14 @@
+{
+  "name": "backendreciclando",
+  "version": "1.0.0",
+  "description": "Backend de la aplicacion reciclando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bryan Apolinario",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
