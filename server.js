@@ -8,7 +8,7 @@ const cors = require('cors');
 /**
  * Instanciar rutas
  */
- const users = require('./routes/usersRoutes');
+ const users = require('./routes/usersRoutes.js');
 
 
 
