@@ -5,6 +5,13 @@ const server = http.createServer(app)
 const logger = require('morgan');
 const cors = require('cors');
 
+/**
+ * Instanciar rutas
+ */
+ const users = require('./routes/usersRoutes');
+
+
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({
@@ -14,6 +21,10 @@ app.use(cors());
 
 app.disable('x-powered-by');
 
+/**
+ * Llamando a las rutas
+ */
+users(app);
 
 
 //const port = process.env.PORT ||3000;
@@ -48,7 +59,10 @@ app.use((err, req, res, next ) => {
 app.listen(3000);
 console.log('test de la aplicacion en digitalOcean', 3000);
 
-
+module.exports = {
+    app: app,
+    server: server
+}
 // 200 - ES UN RESPUESTA EXITOSA
 // 404 - SIGNIFICA QUE LA URL NO EXISTE
 // 500 - ERROR INTERNO DEL SERVIDOR
