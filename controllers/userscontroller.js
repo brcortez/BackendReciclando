@@ -1,6 +1,5 @@
 const User = require('../models/user');
 
-
 module.exports = {
 
     async getAll(req, res, next) {
