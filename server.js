@@ -29,13 +29,21 @@ app.get('/',(req, res ) => {
     res.send("ruta raiz del backend");
 });
 
+app.get('/test',(req, res ) => {
+
+    res.send(" ruta del test");
+});
+
+
 //error del handler
 app.use((err, req, res, next ) => {
     console.log(err);
     res.status(err.status || 500 ).send(err.stack);
 });
 
-app.get('/',(req, res) =>res.send('Backend de la aplicacion Reciclando a tiempo real'));
+
+
+//app.get('/',(req, res) =>res.send('Backend de la aplicacion Reciclando a tiempo real'));
 
 app.listen(3000);
 console.log('test de la aplicacion en digitalOcean', 3000);
