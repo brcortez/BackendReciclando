@@ -47,3 +47,8 @@ app.use((err, req, res, next ) => {
 
 app.listen(3000);
 console.log('test de la aplicacion en digitalOcean', 3000);
+
+
+// 200 - ES UN RESPUESTA EXITOSA
+// 404 - SIGNIFICA QUE LA URL NO EXISTE
+// 500 - ERROR INTERNO DEL SERVIDOR
