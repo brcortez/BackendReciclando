@@ -1,6 +1,6 @@
-const UsersController = require('../controllers/usersController');
+const UsersController = require('./controllers/usersController');
 
-module.exports = (app, upload) => {
+modules.exports = (app, upload) => {
 
     // TRAER DATOS
     app.get('/api/users/getAll', UsersController.getAll);
