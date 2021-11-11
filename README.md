@@ -1,5 +1,7 @@
 ## Reciclando App delivery Backend
  ![alt text](https://github.com/BryanApolinario/reciclandoApp/blob/main/assets/img/delivery.png)
+ 
+ ![diagrama base de datos](https://github.com/BryanApolinario/BackendReciclando/blob/master/ER.PNG)
 
 ## avances 11/11/2021
 - Creacion de los utils del backend reciclando
